@@ -2,6 +2,7 @@ import styles from '@/app/ui/home.module.css';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
+import AcmeLogo from './ui/acme-logo';
 import { lusitana } from './ui/fonts';
 
 export default function Page() {
@@ -35,7 +36,7 @@ export default function Page() {
             height={760}
             className='hidden md:block'
             alt='Screenshots of the dashboard project showing desktop version' />
-            <Image src="/hero-mobile.png" width={560} height={620} className='block md:hidden' alt='Screenshots of the dashboard project showing desktop version' />
+          <Image src="/hero-mobile.png" width={560} height={620} className='block md:hidden' alt='Screenshots of the dashboard project showing desktop version' />
         </div>
       </div>
     </main>
