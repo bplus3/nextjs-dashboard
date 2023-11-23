@@ -7,10 +7,10 @@ import Image from 'next/image';
 export default async function InvoicesTable({
   query,
   currentPage,
-}: {
+}: Readonly<{
   query: string;
   currentPage: number;
-}) {
+}>) {
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (
