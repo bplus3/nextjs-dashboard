@@ -1,11 +1,9 @@
-import { Card } from '@/app/ui/dashboard/cards';
-import RevenueChart from '../../ui/dashboard/revenue-chart';
-import LatestInvoices from '../../ui/dashboard/latest-invoices';
-import { lusitana } from '../../ui/font';
-import { Suspense } from 'react';
-import { RevenueChartSkeleton } from '@/app/ui/skeletons';
-import { LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
+import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+import { Suspense } from 'react';
+import LatestInvoices from '../../ui/dashboard/latest-invoices';
+import RevenueChart from '../../ui/dashboard/revenue-chart';
+import { lusitana } from '../../ui/font';
 
 export default function Page() {
 
@@ -28,6 +26,6 @@ export default function Page() {
                 </Suspense>
 
             </div>
-        </main> >
-  );
+        </main>
+    );
 }
